@@ -1,0 +1,29 @@
+/* Contact Us */
+
+.contacthead{
+    padding: 17.5px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    margin-bottom: 0px;
+}
+
+.contact{
+    height: 595px;
+    background-color: #dfecff;
+}
+
+.contact form{
+    padding: 15px 275px;
+}
+
+
+.contact{
+    background-color:white;
+}
+#navbar1 ul li a.active{
+    color:rgb(53, 40, 37);
+    background-color: rgb(243, 205, 147);
+}
+.head1{
+    background-color: white;
+}

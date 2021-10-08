@@ -1,0 +1,185 @@
+{% extends 'base.html' %}
+
+{% block title %} About {% endblock title %}
+
+{% load static %}
+
+
+
+
+{% block aboutactive %} active {% endblock aboutactive %}
+
+{% block body %} 
+
+<section id="team" class="pb-5">
+  <div class="container">
+    <h5 class="section-title h1">OUR TEAM</h5>
+    <!-- <div class="info">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae est sint nihil ipsa quisquam inventore
+        accusamus quis eum tempore dicta.</p>
+    </div> -->
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+          <div class="mainflip">
+            <div class="frontside">
+              <div class="card">
+                <div class="card-body text-center">
+                  <p>
+                    <img class=" img-fluid" alt="Team Cards Flipper"
+                      src="{%static 'img/Pranav.jpeg' %}" />
+                  </p>
+                  <h4 class="card-title">PRANAV</h4>
+                  <p class="card-text"> Student of AISSMS IOIT College Pune
+                     pranavarjun9696@gmail.com
+                  </p>
+                  <a href="#" class="btn btn-primary btn-sm">More</a>
+                </div>
+              </div>
+            </div>
+            <div class="backside">
+              <div class="card">
+                <div class="card-body text-center mt-4">
+                  <h4 class="card-title">Web Developer</h4>
+                  <p class="card-text">The generated Lorem Ipsum is therefore always free from repetition, injected
+                    humour, or non-characteristic words etc.</p>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a class="social-icon text-xs-center" target="_blank" href="#">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="social-icon text-xs-center" target="_blank" href="#">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="social-icon text-xs-center" target="_blank" href="#">
+                        <i class="fa fa-linkedin blue-color " ></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="social-icon text-xs-center" target="_blank" href="#">
+                        <i class="fa fa-google"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+          <div class="mainflip">
+            <div class="frontside">
+              <div class="card">
+                <div class="card-body text-center">
+                  <p>
+                    <img class=" img-fluid" alt="Team Cards Flipper"
+                      src="{%static 'img/member.jpg' %}" />
+                  </p>
+                  <h4 class="card-title">VAISHNAVI</h4>
+                  <p class="card-text">Student of AISSMS IOIT College Pune
+                    vaishanavi@gmail.com
+                  </p>
+                  <a href="#" class="btn btn-primary btn-sm">More</a>
+                </div>
+              </div>
+            </div>
+            <div class="backside">
+              <div class="card">
+                <div class="card-body text-center mt-4">
+                  <h4 class="card-title">Web Developer</h4>
+                  <p class="card-text">The generated Lorem Ipsum is therefore always free from repetition, injected
+                    humour, or non-characteristic words etc.</p>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a class="social-icon text-xs-center" target="_blank" href="#">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="social-icon text-xs-center" target="_blank" href="#">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="social-icon text-xs-center" target="_blank" href="#">
+                        <i class="fa fa-linkedin blue-color " ></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="social-icon text-xs-center" target="_blank" href="#">
+                        <i class="fa fa-google"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+          <div class="mainflip">
+            <div class="frontside">
+              <div class="card">
+                <div class="card-body text-center">
+                  <p>
+                    <img class=" img-fluid" alt="Team Cards Flipper"
+                      src="{%static 'img/member.jpg' %}" />
+                  </p>
+                  <h4 class="card-title">NITISH</h4>
+                  <p class="card-text">Student of AISSMS IOIT College Pune
+                    nitish@gmail.com
+                  </p>
+                  <a href="#" class="btn btn-primary btn-sm">More</a>
+                </div>
+              </div>
+            </div>
+            <div class="backside">
+              <div class="card">
+                <div class="card-body text-center mt-4">
+                  <h4 class="card-title">Web Developer</h4>
+                  <p class="card-text">The generated Lorem Ipsum is therefore always free from repetition, injected
+                    humour, or non-characteristic words etc.</p>
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a class="social-icon text-xs-center" target="_blank" href="#">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="social-icon text-xs-center" target="_blank" href="#">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="social-icon text-xs-center" target="_blank" href="#">
+                        <i class="fa fa-linkedin blue-color " ></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="social-icon text-xs-center" target="_blank" href="#">
+                        <i class="fa fa-google"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+  </div>
+  </div>
+</section>
+
+
+{% endblock body %}
