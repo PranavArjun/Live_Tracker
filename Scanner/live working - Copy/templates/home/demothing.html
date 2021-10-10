@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trial</title>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+    <script src="./jsqrcode-combined.js"></script>
+    <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js" rel="nofollow"></script>
+    <script src="./html5-qrcode.js"></script>
+</head>
+<body>
+    <div style="width: 500px" id="reader"></div>
+    <h1>start scanning</h1>
+
+    <script>
+        var html5QrcodeScanner = new Html5QrcodeScanner(
+    "reader", { fps: 10, qrbox: 250 });
+        
+       function onScanSuccess(decodedText, decodedResult) {
+    // Handle on success condition with the decoded text or result.
+           console.log(`Scan result: ${decodedText}`, decodedResult);
+    // ...
+           html5QrcodeScanner.clear();
+    // ^ this will stop the scanner (video feed) and clear the scan area.
+    }
+
+       html5QrcodeScanner.render(onScanSuccess);
+    </script>
+
+</body>
+</html>

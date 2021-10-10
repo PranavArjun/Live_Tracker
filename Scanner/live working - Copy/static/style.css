@@ -1,0 +1,88 @@
+/* front page index.html  */
+.h1{
+    font-style: normal;
+    float: left;
+    padding-top: 2cm;
+    padding-bottom: 1cm;
+    left: 60px;
+    position: inherit;
+}
+h1{
+    font-style: normal;
+    float: left;
+    /* padding-bottom: 1cm; */
+    left: 60px;
+    position: inherit;
+}
+#button{
+    left: 60px;
+    position: relative;    
+}
+/* listt css */
+thead,
+  tbody,
+  tfoot,
+  tr,
+  td,
+  th {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+    font-size:large;
+  }
+
+/* scanner 1 css  */
+#scanner1h1{
+    font-style: normal;
+    float: left;
+    padding-top: 1cm;
+    left: 60px;
+    position: inherit;
+}
+
+#preview{
+    width:500px;
+    height: 500px;
+    margin:0px auto;
+ }
+#demo{
+    position: absolute;
+    height: 500px;
+    top: 100px;
+    right: 12cm;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: 1000;
+
+}
+#form{
+  position: absolute;
+  height: 200px;
+  top: 200px;
+  right: 90px;
+  width: 600px;
+  float: right;
+  background-color: aquamarine;
+  border: 0cm;
+  border-color: black;
+  border-width: 4cm;
+}
+#submit{
+  background:greenyellow; font-size: large; float:centre;
+  right: 20px;
+}
+#buttons{
+    right: 250px;
+    position: absolute;
+    top: 80px;
+}
+
+#holders {
+    right: 100px;
+    position: absolute;
+    padding-top: 0.5cm;
+}
+
+
+/* tyle="background:red; font-size: large; float:centre; margin-top: 0.5cm; margin-left: 1cm;"
+style="background:rgb(15, 108, 230); font-size: large; margin-top: 1cm; margin-left: 0.5cm;";  */
