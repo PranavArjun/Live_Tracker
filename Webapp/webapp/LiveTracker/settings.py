@@ -81,9 +81,9 @@ WSGI_APPLICATION = 'LiveTracker.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':  'orders',
+        'NAME':  'Live_Tracker',
         'USER':'root',
-        'PASSWORD':'',
+        'PASSWORD':'admin',
         'HOST':'localhost',
         'PORT':'3306',
     }

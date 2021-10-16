@@ -2,9 +2,8 @@ from django.contrib.messages.api import error
 from django.db.models.expressions import F
 from django.http import response
 from django.shortcuts import render , HttpResponse
-from home.models import Contact
+from home.models import Contact , TrackerScanner
 from django.contrib import messages
-from home.models import Order
 
 
 import json
@@ -16,12 +15,12 @@ def home(request):
         orderid = request.POST.get('Orderid', '')
         orderdate = request.POST.get('OrderDate', '')
         try :
-            order = Order.objects.filter(Orderid=orderid , OrderDate=orderdate)
+            order = TrackerScanner.objects.filter(package_id=orderid , date=orderdate)
             if len(order)>0:
-                gpslink = Order.objects.filter(Orderid = orderid)
+                gpslink = TrackerScanner.objects.filter(package_id= orderid)
                 gpslinks = []
                 for item in gpslink:
-                    gpslinks.append({'char': item.GPs_link})
+                    gpslinks.append({'char': item.gps_no_field})
                     response = json.dumps(gpslinks)
                 return HttpResponse(response)
 

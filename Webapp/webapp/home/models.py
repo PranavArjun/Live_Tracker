@@ -16,11 +16,12 @@ class Contact(models.Model):
         
 
 
+class TrackerScanner(models.Model):
+    id = models.BigAutoField(primary_key=True)
+    package_id = models.IntegerField(unique=True)
+    date = models.DateField(db_column='Date')  # Field name made lowercase.
+    gps_no_field = models.CharField(max_length=200)
 
-class Order(models.Model):
-    Orderid = models.IntegerField()
-    OrderDate = models.DateField()
-    GPs_link = models.URLField() 
- 
-    def __str__(self):
-        return str(self.Orderid)
+    class Meta:
+        managed = False
+        db_table = 'tracker_scanner'
