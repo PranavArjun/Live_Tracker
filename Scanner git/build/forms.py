@@ -12,10 +12,7 @@ class ScannerForm(forms.ModelForm):
   
         # specify fields to be used
         fields = [
-            "package_id",
-            
-            "city",
-            "gps_no_field",
+            "package_id"
         ]
         
         widgets = { 'package_id' : forms.NumberInput(attrs={'id':'cust'}) 

@@ -1,18 +1,15 @@
 from django.db import models
+from django.db.models.fields import DateField
 
 
 # Create your models here.
 
 
 class TrackerScanner(models.Model):
-    ID = models.IntegerField()
     package_id= models.IntegerField(unique=True)
-    first_name = models.CharField(max_length=50)
-    last_name = models.CharField(max_length=50)
-    city = models.CharField(max_length=50)
-    gps_no_field = models.AutoField(db_column='GPS no.',  primary_key = True,
-                  serialize = False, 
-                  verbose_name ='ID')  # Field name made lowercase. Field renamed to remove unsuitable characters. Field renamed because it ended with '_'.
+    Date = models.DateField(default="2021-12-12")
+    gps_no_field = models.URLField(default="https://www.google.com/maps/@18.1611145,74.5895199,14z")
+   
     
     class Meta:
         

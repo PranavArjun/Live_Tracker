@@ -132,11 +132,11 @@ DATABASES = {
 
         "ENGINE": "django.db.backends.mysql",
 
-        "NAME": "sql_inventory",
+        "NAME": "Live_Tracker",
 
         "USER": "root",
 
-        "PASSWORD": "maniarya",
+        "PASSWORD": "admin",
 
         "PORT": 3306,
 
